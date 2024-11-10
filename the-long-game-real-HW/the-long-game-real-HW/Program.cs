@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //Ask for user's name
+            Console.Write("Enter your name: ");
+            string username = Console.ReadLine();
+            int score = 0;
+            //Console.WriteLine(username);
         }
     }
 }
