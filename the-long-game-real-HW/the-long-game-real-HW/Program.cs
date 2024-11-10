@@ -15,6 +15,16 @@ namespace the_long_game_real_HW
 
             //Check if there is already an old file
             string fileName = $"{username}.txt";
+            if (File.Exists(fileName))
+            { 
+                // Load old score if applicable
+                string oldScoreText = File.ReadAllText(fileName);
+                if (int.TryParse(oldScoreText, out int oldScore))
+                {
+                    score = oldScore;
+                    Console.WriteLine($"Welcome back, {username}! Starting score: {score}");
+                }
+
 
         }
     }
