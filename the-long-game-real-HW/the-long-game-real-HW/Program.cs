@@ -1,4 +1,7 @@
-﻿namespace the_long_game_real_HW
+﻿using System;
+using System.IO;
+
+namespace the_long_game_real_HW
 {
     internal class Program
     {
@@ -9,6 +12,10 @@
             string username = Console.ReadLine();
             int score = 0;
             //Console.WriteLine(username);
+
+            //Check if there is already an old file
+            string fileName = $"{username}.txt";
+
         }
     }
 }
